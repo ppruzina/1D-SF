@@ -13,9 +13,13 @@ Files include:
 
 ## The model
 A one-dimensional horizontally averaged model, derived from the Boussinesq equations via an averaging process, using a mixing-length assumption for closure. The dimensionless model for temperature $T(z,t)$, salinity $S(z,t)$ and kinetic energy $e(z,t)$ takes the form
+
 $$T_t = \left(\frac{D^2}{D+1}T_z\right)_z,$$
+
 $$S_t = \left(\frac{D^2}{D+\tau}S_z\right)_z,$$
+
 $$e_t = \left(\frac{D^2}{D+\sigma}e_z\right)_z + \sigma e\_{zz} - \sigma \left(\frac{D^2}{D+1}T_z - \frac{D^2}{D+\tau}S_z\right) - \epsilon \frac{D^2}{e}. $$
+
 The model depends on the dimensionless parameters $\sigma$ (Prandtl number, 10), $\tau$ (diffusivity ratio, 0.01) and $\epsilon$ (dissipation parameter, 0.02)
 The system is closed using the turbulent diffusivity $D = le^{1/2}$, where $l$ is a turbulent mixing length.
 The form for the diffusivity is 
